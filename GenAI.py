@@ -163,7 +163,7 @@ if st.session_state["logged_in"]:
         load_dotenv()
         genai.configure(api_key=my_api_key)
     
-    def save_uploaded_file(uploaded_file)):
+    def save_uploaded_file(uploaded_file):
         """save the uploaded file to to the media folder and return the file path."""
         file_path = os.path.join(MEDIA_FOLDER, uploaded_file.name)
         with open(file_path, "wb") as f:
