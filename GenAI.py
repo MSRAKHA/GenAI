@@ -10,7 +10,7 @@ import google.generativeai as genai
 import PIL
 import numpy as np
 import bcrypt
-st.set_page_confi(page_title="Login", page_icon=":tada:", layout="wide")
+st.set_page_config(page_title="Login", page_icon=":tada:", layout="wide")
 users={
     "user1" :{
         "username" : "user1",
