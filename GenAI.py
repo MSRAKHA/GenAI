@@ -90,7 +90,7 @@ if st.session_state["logged_in"]:
                         img_buffer = io.BytesIO()
                         image.save(img_buffer, format="PNG")
                         img_buffer.seek(0)
-                        st.downlaod_button(
+                        st.download_button(
                                 label="Download Image",
                                 data=img_buffer,
                                 file_name=f"{caption}.png",
