@@ -119,7 +119,7 @@ if st.session_state["logged_in"]:
                 st.header("Image Caption Generator")
                 st.info(caption)
     def display_TextGeneration():
-        os.environ['GOOGLE_API_KEY'] = "AIzaSYBrCihLeiptofBDzgIdG8U6ypyo8aBFWew"
+        os.environ['GOOGLE_API_KEY'] = "AIzaSyBrCihLeiptofBDzgIdG8U6ypyO8aBFWew"
         genai.configure(api_key=os.environ['GOOGLE_API_KEY'])
         st.title("Text Generation")
 
@@ -135,7 +135,7 @@ if st.session_state["logged_in"]:
                 result = generate_text(user_prompt)
                 st.write(result)
     def display_ImageAnalysis():
-        os.environ['GOOGLE_API_KEY'] = "AIzaSYBrCihLeiptofBDzgIdG8U6ypyo8aBFWew"
+        os.environ['GOOGLE_API_KEY'] = "AIzaSyBrCihLeiptofBDzgIdG8U6ypyO8aBFWew"
         genai.configure(api_key=os.environ['GOOGLE_API_KEY'])
         
 
@@ -154,7 +154,7 @@ if st.session_state["logged_in"]:
                     result = analyze_image(image, prompt)
                     st.write(result)
     MEDIA_FOLDER ='medias'
-    my_api_key = "AIzaSYBrCihLeiptofBDzgIdG8U6ypyo8aBFWew"
+    my_api_key = "AIzaSyBrCihLeiptofBDzgIdG8U6ypyO8aBFWew"
     
 
     def display_videoGeneration():
@@ -203,7 +203,7 @@ if st.session_state["logged_in"]:
                 os.remove(file_path)
                 st.warning("File deleted successfully")
     def display_chatBot():
-        os.environ['GOOGLE_API_KEY'] = "AIzaSYBrCihLeiptofBDzgIdG8U6ypyo8aBFWew"
+        os.environ['GOOGLE_API_KEY'] = "AIzaSyBrCihLeiptofBDzgIdG8U6ypyO8aBFWew"
         genai.configure(api_key=os.environ['GOOGLE_API_KEY'])
         st.title("ChatBot")
         model = genai.GenerativeModel("gemini-pro")
