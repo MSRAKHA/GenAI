@@ -63,7 +63,7 @@ if st.session_state["logged_in"]:
         st.write("- ChatBot: Engage in a conversation with the app")
         st.header("Developer - Rakha Shaik")
     def display_Text2Image():
-        API_URL ="https://api-inference.huggingface.co/models/black-forest-labs/FLUX.1dev"
+        API_URL ="https://api-inference.huggingface.co/models/black-forest-labs/FLUX.1-dev"
         headers = {"Authorization": "Bearer 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"}
 
         def query(payload):
