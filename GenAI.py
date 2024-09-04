@@ -36,7 +36,7 @@ if not st.session_state["logged_in"]:
         else:
             st.error("Invalid username or password")
 if st.session_state["logged_in"]:
-    st.sidebar.title("GenAI App")
+    st.sidebar.title("GenAI Web App")
     #st.sidebar.title("This is a simple GenAI app using Streamlit and Google's Gemini Pro model")
     st.sidebar.title("Developer - Rakha Shaik")
     st.sidebar.markdown("-----")
