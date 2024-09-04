@@ -43,7 +43,7 @@ if st.session_state["logged_in"]:
 
     #create a sidebar for navigation
     options =["Get Started" ,"Text2Image","Image2Caption","Text Generation","Image Analysis" , "Video Insights", "ChatBot"]
-    option = st.sidebar.selectbox("Go to", options)
+    option = st.sidebar.radio("Go to", options)
     #Logout Button
     if st.sidebar.button("Logout"):
         st.session_state["logged_in"] = False
